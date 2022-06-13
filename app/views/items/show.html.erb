@@ -1,0 +1,12 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @item %>
+
+<div>
+  <%= link_to '<button>Edit this item</button>'.html_safe, edit_item_path(@item) %> |
+  <%= link_to '<button>Back to items</button>'.html_safe, items_path %>
+</div>
+<br>
+
+  <%= button_to "Destroy this item", @item, method: :delete %>
+

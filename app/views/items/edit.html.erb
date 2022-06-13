@@ -1,0 +1,10 @@
+<h1>Editing item</h1>
+
+<%= render "form", item: @item %>
+
+<br>
+
+<div>
+  <%= link_to "<button>Show this item</button>".html_safe, @item %> |
+  <%= link_to "<button>Back to items</button>".html_safe, items_path %>
+</div>
